@@ -47,6 +47,10 @@ function createRow(rowNumber){
         // adding focus event for eveyrcell
 
         cell.addEventListener('focus',onCellFocus);
+
+        // add input event for everycell
+
+        cell.addEventListener('input',onFormChange);
     }
     mainContainer.appendChild(row);
 

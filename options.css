@@ -5,8 +5,9 @@
     justify-content: center;
     /* border: 2px solid red; */
     padding: 20px 10px;
-    width: 50vw;
+    width: 70vw;
     margin: auto;
+    align-items: center;
 
 }
 
@@ -49,4 +50,17 @@
 .option-btn:hover{
 
     background-color: #ededed;
+}
+
+.hidden-input{
+
+    width: 0 !important;
+    height: 0;
+    border: none;
+}
+
+.hidden-input:checked + label{
+
+    background-color: #ededed;
+
 }
