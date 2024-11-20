@@ -1,20 +1,21 @@
-let data ={
+let data = {
 
-    name:'Deepak',
-    age:21,
-    college:'IIITH',
-    role:"Data scientist",
-    company:"Gramener"
+    name: 'Deepak',
+    age: 21,
+    college: 'IIITH',
+    role: "Data scientist",
+    company: "Gramener"
 }
 
 const a = document.querySelector('a');
-function createAndDownload(){
+
+function createAndDownload() {
 
     let fileData = JSON.stringify(data);
     // console.log(fileData);
 
-    let file = new Blob([fileData],{type:'json'});
-    let url = URL.createObjectURL(file);// it creates a url
+    let file = new Blob([fileData], { type: 'json' });
+    let url = URL.createObjectURL(file); // it creates a url
     // console.log(url);
     a.href = url;
 }
